@@ -31,7 +31,7 @@ function formatDate(date, fromFormat, toFormat) {
       let fullYear = dateArr[years] || dateArr[year2];
 
       if (fullYear.length === 2) {
-        fullYear = Number(fullYear) <= 26 ? '20' + fullYear : '19' + fullYear;
+        fullYear = Number(fullYear) < 30 ? '20' + fullYear : '19' + fullYear;
       }
 
       finalParts.push(fullYear);
